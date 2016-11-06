@@ -1,0 +1,3 @@
+.rating .letter, .grade.letter, .user-rating-widget {
+    -webkit-filter: blur(20px) grayscale(100%);
+}

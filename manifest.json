@@ -1,0 +1,182 @@
+{
+    "manifest_version": 2,
+    "name": "Ratings Blocker",
+    "version": "1.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://pitchfork.com/*",
+                "http://www.avclub.com/*",
+                "*://www.allmusic.com/*",
+                "*://en.wikipedia.org/*",
+                "http://www.rollingstone.com/*",
+                "http://www.spin.com/*",
+                "http://www.nme.com/*",
+                "http://www.absolutepunk.net/*",
+                "http://www.ew.com/*",
+                "http://www.theguardian.com/*",
+                "http://www.independent.co.uk/*",
+                "http://www.metacritic.com/*"
+            ],
+            "css": [
+                "css/content-main.css"
+            ],
+            "js": [
+                "js/jquery-2.2.0.min.js",
+                "js/content-main.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://pitchfork.com/*"
+            ],
+            "css": [
+                "css/site-content/pitchfork.css"
+            ],
+            "js": [
+                "js/site-content/pitchfork.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.avclub.com/*"
+            ],
+            "css": [
+                "css/site-content/avclub.css"
+            ],
+            "js": [
+                "js/site-content/avclub.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://www.allmusic.com/*"
+            ],
+            "css": [
+                "css/site-content/allmusic.css"
+            ],
+            "js": [
+                "js/site-content/allmusic.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://en.wikipedia.org/*"
+            ],
+            "css": [
+                "css/site-content/wikipedia.css"
+            ],
+            "js": [
+                "js/site-content/wikipedia.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.rollingstone.com/*"
+            ],
+            "css": [
+                "css/site-content/rollingstone.css"
+            ],
+            "js": [
+                "js/site-content/rollingstone.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.spin.com/*"
+            ],
+            "css": [
+                "css/site-content/spin.css"
+            ],
+            "js": [
+                "js/site-content/spin.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.nme.com/*"
+            ],
+            "css": [
+                "css/site-content/nme.css"
+            ],
+            "js": [
+                "js/site-content/nme.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.absolutepunk.net/*"
+            ],
+            "css": [
+                "css/site-content/absolutepunk.css"
+            ],
+            "js": [
+                "js/site-content/absolutepunk.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.ew.com/*"
+            ],
+            "css": [
+                "css/site-content/ew.css"
+            ],
+            "js": [
+                "js/site-content/ew.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.theguardian.com/*"
+            ],
+            "css": [
+                "css/site-content/guardian.css"
+            ],
+            "js": [
+                "js/site-content/guardian.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.independent.co.uk/*"
+            ],
+            "css": [
+                "css/site-content/independent.css"
+            ],
+            "js": [
+                "js/site-content/independent.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://www.metacritic.com/*"
+            ],
+            "css": [
+                "css/site-content/metacritic.css"
+            ],
+            "js": [
+                "js/site-content/metacritic.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+    "icons": {
+        "16": "img/10outta10-16.png",
+        "48": "img/10outta10-48.png",
+        "128": "img/10outta10-128.png"
+    },
+    "browser_action": {
+        "default_icon": "img/10outta10-128.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab"
+    ]
+}

@@ -1,0 +1,3 @@
+.metascore_w, span.desc, .score_counts, .textscore {
+    -webkit-filter: blur(20px) grayscale(100%);
+}

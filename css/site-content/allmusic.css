@@ -1,0 +1,8 @@
+.rating, .allmusic-rating, .all-rating, .avg-rating, .pick-prefix, ul.ratings #microdata-rating, ul.ratings .average, .album-tooltip .ratings, span.album-pick {
+    -webkit-filter: blur(20px) grayscale(100%);
+}
+
+
+
+
+

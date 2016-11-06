@@ -1,0 +1,39 @@
+.body {
+    cursor: default;
+    font-family: sans-serif;
+    font: "Helvetica";
+    font-size: 12pt;
+    overflow-x: none;
+    text-decoration-style: none;
+    width: 300px;
+    -webkit-user-select: none;
+}
+
+.header {
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
+    font-size: 1.5em;
+    padding: 15px 0;
+}
+
+.header * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon {
+    padding: 0 10px;
+    width: 35px;
+}
+
+.options span {
+    display: block;
+    margin-top: 0.5em;
+    padding: 0.5em 0.3em;
+}
+
+.options span:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

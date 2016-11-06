@@ -1,0 +1,3 @@
+table.wikitable.infobox {
+    -webkit-filter: blur(20px) grayscale(100%);
+}
